@@ -982,7 +982,7 @@ if [ ! -d $WORKDIR/chromium_efi_mount ]
 then
   mkdir $WORKDIR/chromium_efi_mount
 fi
-mount /dev/mmcblk0 $WORKDIR/chromium_efi_mount -t vfat
+mount /dev/mmcblk012 $WORKDIR/chromium_efi_mount -t vfat
 cp $WORKDIR/chrome_efi_mount/syslinux/vmlinuz.B $WORKDIR/chromium_efi_mount/syslinux/vmlinuz.B -f
 cp $WORKDIR/chrome_efi_mount/syslinux/vmlinuz.B $WORKDIR/chromium_efi_mount/syslinux/vmlinuz.A -f
 umount $WORKDIR/chrome_efi_mount
